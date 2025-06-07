@@ -1,10 +1,6 @@
 version: 1
 frontend:
   phases:
-    preBuild:
-      commands:
-        - npm ci
-        - npx amplify pull --appId $AMPLIFY_APP_ID --envName $AMPLIFY_ENV_NAME --yes
     build:
       commands:
         - npm run build
